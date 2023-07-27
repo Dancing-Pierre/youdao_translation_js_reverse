@@ -1,4 +1,4 @@
-run = "python /root/youdao_translation_js_reverse/main.py"
+run = "pip install pyexecjs; apt-get update; apt-get install -y node.js; apt-get install -y npm; python /root/youdao_translation_js_reverse/main.py"
 
 [packager]
 AUTO_PIP = true
