@@ -57,9 +57,13 @@ def get_explain_data(data):
 
 
 if __name__ == '__main__':
-    chinese = input('请输入中文：')
-    t = time.time()
-    time_now = int(round(t * 1000))
-    sign = get_sign(time_now)
-    result = get_data(chinese, sign)
-    print('英文翻译是：{}'.format(result))
+    while True:
+        print('===================【跳出程序请输入：退出】====================')
+        chinese = input('请输入中文：')
+        if chinese == '退出':
+            break
+        t = time.time()
+        time_now = int(round(t * 1000))
+        sign = get_sign(time_now)
+        result = get_data(chinese, sign)
+        print('英文翻译是：{}'.format(result))
