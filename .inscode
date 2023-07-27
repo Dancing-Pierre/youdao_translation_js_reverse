@@ -1,4 +1,5 @@
-run = "pip install -r requirements.txt;python main.py"
+run = "pip install pyexecjs
+        python /root/youdao_translation_js_reverse/main.py"
 
 [packager]
 AUTO_PIP = true
