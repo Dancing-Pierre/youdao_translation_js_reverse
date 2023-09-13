@@ -1,4 +1,5 @@
 run = "pip install pyexecjs; apt-get update; apt-get install -y node.js; apt-get install -y npm; python /root/youdao_translation_js_reverse/main.py"
+language = "python"
 
 [packager]
 AUTO_PIP = true
@@ -10,3 +11,6 @@ PYTHONPATH = "$PYTHONHOME/lib/python3.10:${VIRTUAL_ENV}/lib/python3.10/site-pack
 REPLIT_POETRY_PYPI_REPOSITORY = "http://mirrors.csdn.net.cn/repository/csdn-pypi-mirrors/simple"
 MPLBACKEND = "TkAgg"
 POETRY_CACHE_DIR = "/root/${PROJECT_DIR}/.cache/pypoetry"
+
+[debugger]
+program = "main.py"
